@@ -1,0 +1,37 @@
+
+function repeatDown(total) {		//Function that loops Rudy to go down
+  var count = 0;
+  while (count < total) {
+    down();
+    count = count +1;
+  }
+}
+function repeatRight(total) {		//Function that loops Rudy to go right
+  var count = 0;
+  while (count < total) {
+    right();
+    count = count +1;
+  }
+}
+
+
+// color variables
+var color = "red";
+var color = "blue";
+
+
+//Steps
+repeatRight(2); 
+while (getColor() == "red") {
+  up();
+  repeatRight(2);
+}
+while (getColor() == "blue") {
+  down();
+  repeatRight(2);
+}
+while (getColor() == "red") {
+	up();
+  repeatRight(2);
+}
+repeatRight(2);
