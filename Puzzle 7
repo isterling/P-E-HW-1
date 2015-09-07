@@ -1,0 +1,66 @@
+
+function repeatRight(total) {
+  var count = 0;
+  while (count < total) {
+    right();
+    count = count + 1;
+  }
+}
+// color variables
+var color = "red";
+
+
+
+// total variable
+var total = "total";
+
+//Functions
+while (getColor() != "red") {
+  down();
+}
+  
+if (getColor() == "red") {
+  repeatRight(2);
+} else {
+  down();
+}
+
+while (getColor() != "red") {
+  up();
+}
+  
+if (getColor() == "red") {
+  repeatRight(2);
+} else {
+  down();
+}
+
+while (getColor() != "red") {
+  down();
+}
+  
+if (getColor() == "red") {
+  repeatRight(2);
+} else {
+  down();
+}
+
+while (getColor() != "red") {
+  up();
+}
+  
+if (getColor() == "red") {
+  repeatRight(2);
+} else {
+  down();
+}
+
+while (getColor() != "red") {
+  down();
+}
+  
+if (getColor() == "red") {
+  repeatRight(2);
+} else {
+  down();
+}
