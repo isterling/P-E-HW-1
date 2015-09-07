@@ -1,4 +1,11 @@
-
+///////////////////////Funtions
+function repeatDown(total) {
+  var count = 0;
+  while (count < total) {
+    down();
+    count = count + 1;
+  }
+}
 function repeatRight(total) {
   var count = 0;
   while (count < total) {
@@ -6,61 +13,55 @@ function repeatRight(total) {
     count = count + 1;
   }
 }
-// color variables
-var color = "red";
+function repeatUp(total) {
+  var count = 0;
+  while (count < total) {
+    up();
+    count = count + 1;
+  }
+}
+
+///////////////////////Steps
+
+var color = getColor();
 
 
-
-// total variable
-var total = "total";
-
-//Functions
 while (getColor() != "red") {
   down();
 }
-  
-if (getColor() == "red") {
+
+while (getColor() == "red") {
   repeatRight(2);
-} else {
+}
+  
+while (getColor() != "red") {
+  up();
+}
+
+while (getColor() == "red") {
+  repeatRight(2);
+}
+
+while (getColor() != "red") {
   down();
+}
+
+while (getColor() == "red") {
+  repeatRight(2);
 }
 
 while (getColor() != "red") {
   up();
 }
-  
-if (getColor() == "red") {
+
+while (getColor() == "red") {
   repeatRight(2);
-} else {
-  down();
 }
 
 while (getColor() != "red") {
   down();
 }
-  
-if (getColor() == "red") {
-  repeatRight(2);
-} else {
-  down();
-}
 
-while (getColor() != "red") {
-  up();
-}
-  
-if (getColor() == "red") {
+while (getColor() == "red") {
   repeatRight(2);
-} else {
-  down();
-}
-
-while (getColor() != "red") {
-  down();
-}
-  
-if (getColor() == "red") {
-  repeatRight(2);
-} else {
-  down();
 }
