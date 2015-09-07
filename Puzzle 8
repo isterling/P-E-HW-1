@@ -1,0 +1,81 @@
+
+function repeatRight(total) {
+  var count = 0;
+  while (count < total) {
+    right();
+    count = count + 1;
+  }
+}
+
+
+
+var total = 0;
+
+
+//Functions
+while (total != 8) {
+  down();
+  total++;
+  
+}
+if (total == 8) {
+  repeatRight(2);
+} else {
+  up();
+}
+
+
+while (total != 0) {
+  up();
+  total--;
+  
+}
+if (total == 0) {
+  repeatRight(2);
+} else {
+  down();
+}
+while (total != 8) {
+  down();
+  total++;
+  
+}
+if (total == 8) {
+  repeatRight(2);
+} else {
+  up();
+}
+
+
+while (total != 0) {
+  up();
+  total--;
+  
+}
+if (total == 0) {
+  repeatRight(2);
+} else {
+  down();
+}
+while (total != 8) {
+  down();
+  total++;
+  
+}
+if (total == 8) {
+  repeatRight(2);
+} else {
+  up();
+}
+
+
+while (total != 0) {
+  up();
+  total--;
+  
+}
+if (total == 0) {
+  repeatRight(2);
+} else {
+  down();
+}
